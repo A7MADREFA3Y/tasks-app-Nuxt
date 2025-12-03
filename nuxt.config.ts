@@ -2,5 +2,15 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint']
+  modules: ['@nuxt/eslint'],
+  eslint: {
+    config: {
+      stylistic: {
+        semi: true,
+        quotes: 'double',
+        commaDangle: "always-multiline",
+        indent: 'tab',
+      }
+    }
+  }
 })
