@@ -1,12 +1,14 @@
 <template>
 <nav class="container">
-            <ul>
-                <li><strong>Acme Corp</strong></li>
-            </ul>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Products</a></li>
+        <ul>
+            <li>
+                <nuxt-link to="/">
+                    <strong>Tasks App</strong>
+                </nuxt-link>
+            </li>
+        </ul>
+        <ul>
+            <li><NuxtLink :to="{ name: 'create' }">create</NuxtLink></li>
         </ul>
     </nav>
 </template>
