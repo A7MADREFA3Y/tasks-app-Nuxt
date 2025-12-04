@@ -1,6 +1,10 @@
+<script len="ts" setup>
+  const {data: tasks, error, status} = await useFetch('/api/tasks');
+</script>
+
+
 <template>
-  <div>
-    <!-- Your page content here -->
-    <h1>Hello World</h1>
-  </div>
+  <article v-for="task in tasks" :key="task.id">
+      {{ task.title }}
+  </article>
 </template>
