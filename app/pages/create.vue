@@ -1,5 +1,5 @@
 <template>
-    <h2>
-        Create a Tasks!
-    </h2>
+	<h2>
+		Create a Tasks!
+	</h2>
 </template>
